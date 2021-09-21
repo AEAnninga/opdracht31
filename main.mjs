@@ -36,6 +36,7 @@ console.log('Versie1:', getLightWeightSuperHeroesNames(superHeroes)); // Versie 
 
 // versie 2
 const lightWeightSuperHeroes = superHeroes.filter(superHero => superHero.weight < 190);
+console.log('Versie 2a:', lightWeightSuperHeroes);
 const lightWeightSuperHeroesNames = []
 lightWeightSuperHeroes.forEach(superHero => lightWeightSuperHeroesNames.push(superHero.name))
 console.log('Versie 2:', lightWeightSuperHeroesNames);
@@ -123,7 +124,7 @@ console.log('Dit is het gezamenlijke gewicht:', combinedWeightMarvelComics(super
 const getHeaviestSuperHero = array => {
     let weightSuperHeroes = [];
     array.forEach(superHero => weightSuperHeroes.push(superHero.weight));
-    console.log('Alle gewichten:', weightSuperHeroes);
+    // console.log('Alle gewichten:', weightSuperHeroes);
     let heaviestWeight = weightSuperHeroes.reduce((startWeight, currentWeight) => {
         if (currentWeight === 'unknown') {
             return parseInt(startWeight) + 0;
@@ -133,9 +134,9 @@ const getHeaviestSuperHero = array => {
             return parseInt(currentWeight) + 0;
         }
     })
-    console.log('Dit is het zwaarste gewicht:', heaviestWeight);
+    // console.log('Dit is het zwaarste gewicht:', heaviestWeight);
     let heaviestSuperHero = array.filter(superHero => parseInt(superHero.weight) === heaviestWeight);
-    console.log('Dit is de zwaarste superhero:');
+    // console.log('Dit is de zwaarste superhero:');
     return heaviestSuperHero[0];
 }
-console.log(getHeaviestSuperHero(superHeroes));
+console.log('Zwaarste superhero:', getHeaviestSuperHero(superHeroes));
