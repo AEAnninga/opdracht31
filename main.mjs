@@ -10,10 +10,7 @@ const getSuperHeroNameMap = array => {
     const newArray = array.map(superHeroNames);
     return newArray;
 }
-
 console.log(getSuperHeroNameMap(superHeroes));
-
-
 
 const getSuperHeroNameForEach = array => { // .forEach method
     let newArray =[];
@@ -22,7 +19,6 @@ const getSuperHeroNameForEach = array => { // .forEach method
     })
     return newArray;
 }
-
 console.log(getSuperHeroNameForEach(superHeroes));
 
 // Opdracht 2 array namen van 'lichte'superhelden
@@ -36,7 +32,6 @@ const getLightWeightSuperHeroesNames = array => {
     })
     return lightWeightNames;
 }
-
 console.log('Versie1:', getLightWeightSuperHeroesNames(superHeroes)); // Versie 1: ['Green Lantern','Wonder Woman', 'Blue Beetle', 'Spider Man']
 
 // versie 2
@@ -70,7 +65,6 @@ const getComicsFirstAppearanceMap = array => {
     const newArray = array.map(comicsFirstAppearance);
     return newArray;
 }
-
 console.log(getComicsFirstAppearanceMap(superHeroes));
 
 // opdracht 5: 2 arrays alle superhelden: DC comics en Marvel
@@ -144,5 +138,4 @@ const getHeaviestSuperHero = array => {
     console.log('Dit is de zwaarste superhero:');
     return heaviestSuperHero[0];
 }
-
 console.log(getHeaviestSuperHero(superHeroes));
